@@ -20,6 +20,9 @@
         <!-- Argon CSS -->
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{!! asset('css/app.css') !!}">
+
+        @livewireStyles
     </head>
     <body class="{{ $class ?? '' }}">
         @auth()
@@ -45,5 +48,6 @@
 
         <!-- Argon JS -->
         <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
+        @livewireScripts
     </body>
 </html>

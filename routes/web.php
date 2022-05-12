@@ -28,10 +28,14 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);
-	Route::get('upgrade', function () {return view('pages.upgrade');})->name('upgrade'); 
+	Route::get('upgrade', function () {return view('pages.upgrade');})->name('upgrade');
 	 Route::get('map', function () {return view('pages.maps');})->name('map');
-	 Route::get('icons', function () {return view('pages.icons');})->name('icons'); 
+	 Route::get('icons', function () {return view('pages.icons');})->name('icons');
 	 Route::get('table-list', function () {return view('pages.tables');})->name('table');
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
+    Route::get('orders/open/orders', [\App\Http\Livewire\Orders\OpenOrders::class, '__invoke'])->name('orders.open.orders');
+    Route::get('orders/closed/orders', [\App\Http\Livewire\Orders\ClosedOrders::class, '__invoke'])->name('orders.closed.orders');
+    Route::get('customers/b2b/customers', [\App\Http\Livewire\Customers\B2bCustomers::class, '__invoke'])->name('b2b.customers.index');
+    Route::get('products/index', [\App\Http\Livewire\Products\Products::class, '__invoke'])->name('products.index');
 });
 

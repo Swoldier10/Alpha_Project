@@ -85,13 +85,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}">
+                    <a class="nav-link" href="{{ route('products.index') }}">
                         <i class="fa fa-cube" aria-hidden="true"></i>
                         {{ __('Products') }}
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}">
+                    <a class="nav-link" href="{{ route('b2b.customers.index') }}">
                         <i class="fa fa-users" aria-hidden="true"></i>
                         {{ __('Customers') }}
                     </a>
@@ -105,13 +105,13 @@
                     <div class="collapse show" id="navbar-examples">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('profile.edit') }}">
+                                <a class="nav-link" href="{{ route('orders.open.orders') }}">
                                     <i class="fa fa-envelope-open" aria-hidden="true"></i>
                                     {{ __('Open Orders') }}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.index') }}">
+                                <a class="nav-link" href="{{ route('orders.closed.orders') }}">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     {{ __('Closed Orders') }}
                                 </a>
