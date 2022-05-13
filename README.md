@@ -8,6 +8,6 @@ video_embed: 'demonstration video'
 public_url: https://cluj.dke.univie.ac.at/404/
 private_url: https://cluj.dke.univie.ac.at/404/
 ---
-# Titel
+# Beekeeper Journey
 
-Descriptive text
+Unser Ziel ist eine Plattform zu enteickeln welche das leben des Imkers erleichtert. Auf dieser Plattform kann der Imker den Honigstock uberwachen, die ankommenden Bestellungen sehen und Kosten ubersehen.
