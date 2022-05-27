@@ -11,6 +11,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Typ</th>
+                <th scope="col">Quantity</th>
             </tr>
             </thead>
             <tbody>
@@ -18,7 +19,8 @@
                 <tr>
                     <td>{{$product['id']}}</td>
                     <td>{{$product['Name']}}</td>
-                    <td>{{$product['Typ']}}</td>
+                    <td>{{$product['type']}}</td>
+                    <td>{{$product['quantity']}}</td>
                 </tr>
             @endforeach
             </tbody>
