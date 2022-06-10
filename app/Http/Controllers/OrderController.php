@@ -16,8 +16,8 @@ class OrderController extends Controller
             'product_name' => $product_name,
             'quantity' => $quantity
         ]);
-        $recipient = 'manuela.vlasin@yahoo.com';
-        Notification::route('mail', $recipient)->notify(new OrderPlacedNotification($order['id']));
+//        $recipient = 'manuela.vlasin@yahoo.com';
+        Notification::route('mail', $customer_email)->notify(new OrderPlacedNotification($order['id']));
 
     }
 }
