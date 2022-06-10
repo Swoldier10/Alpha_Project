@@ -57,7 +57,7 @@ class ProductController extends Controller
             if($product !== null)
             {
                 $product->update([
-                    'quantity' =>  $no_hives * rand(4535, 9071),
+                    'quantity' => $product['quantity'] + $no_hives * rand(4535, 9071),
                 ]);
                 return response()->json([
                     "message" => "Produktmenge wurde aktualisiert"

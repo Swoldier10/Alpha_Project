@@ -56,7 +56,8 @@ class OrderPlacedNotification extends Notification
         return (new MailMessage)
             ->from('BeeKeeper.modellierungstools@gmail.com', 'Bee Keeper')
             ->greeting('Guten Tag,')
-            ->line(new HtmlString("Wir haben Ihre Bestellung bekommen, diese enthalt folgendes Produkt: <span style='font-weight: bold'>$productName</span>"))
+            ->line("Wir haben Ihre Bestellung bekommen, diese enthalt folgendes Produkt:")
+            ->line(new HtmlString("<span style='font-weight: bold'>$productName</span>"))
             ->attachData($this->overview_pdf($this->order), $this->order->customer_email . ".pdf");
     }
 
