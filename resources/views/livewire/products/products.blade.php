@@ -18,9 +18,9 @@
             @foreach($products as $product)
                 <tr>
                     <td>{{$product['id']}}</td>
-                    <td>{{$product['Name']}}</td>
+                    <td>{{$product['name']}}</td>
                     <td>{{$product['type']}}</td>
-                    <td>{{$product['quantity']}}</td>
+                    <td>{{number_format($product['quantity']/1000, 2, '.', ',')}} kg</td>
                 </tr>
             @endforeach
             </tbody>
