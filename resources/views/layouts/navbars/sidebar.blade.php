@@ -7,7 +7,7 @@
         <!-- Brand -->
         <a class="navbar-brand pt-0" href="{{ route('home') }}">
 {{--            <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">--}}
-            <img src="https://cdn-aibkb.nitrocdn.com/GwMtTyvALQYHkTdMMrEwPTAqrUQTwmAK/assets/static/optimized/rev-b4b3aeb/wp-content/uploads/2020/06/AlphaProject.png"  class="img-thumbnail" alt="Cinque Terre">
+            <img src="{{ url('storage/images/app-icon.jpeg') }}"  class="img-thumbnail" alt="Cinque Terre">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -84,41 +84,41 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('products.index') }}">
-                        <i class="fa fa-cube" aria-hidden="true"></i>
-                        {{ __('Products') }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('b2b.customers.index') }}">
-                        <i class="fa fa-users" aria-hidden="true"></i>
-                        {{ __('Customers') }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Orders') }}</span>
-                    </a>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="{{ route('products.index') }}">--}}
+{{--                        <i class="fa fa-cube" aria-hidden="true"></i>--}}
+{{--                        {{ __('Products') }}--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="{{ route('b2b.customers.index') }}">--}}
+{{--                        <i class="fa fa-users" aria-hidden="true"></i>--}}
+{{--                        {{ __('Customers') }}--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">--}}
+{{--                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>--}}
+{{--                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Orders') }}</span>--}}
+{{--                    </a>--}}
 
-                    <div class="collapse show" id="navbar-examples">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('orders.open.orders') }}">
-                                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
-                                    {{ __('Open Orders') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('orders.closed.orders') }}">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    {{ __('Closed Orders') }}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+{{--                    <div class="collapse show" id="navbar-examples">--}}
+{{--                        <ul class="nav nav-sm flex-column">--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" href="{{ route('orders.open.orders') }}">--}}
+{{--                                    <i class="fa fa-envelope-open" aria-hidden="true"></i>--}}
+{{--                                    {{ __('Open Orders') }}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" href="{{ route('orders.closed.orders') }}">--}}
+{{--                                    <i class="fa fa-envelope" aria-hidden="true"></i>--}}
+{{--                                    {{ __('Closed Orders') }}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
 
             </ul>
             <!-- Divider -->

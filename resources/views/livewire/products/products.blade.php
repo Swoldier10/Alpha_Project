@@ -1,9 +1,9 @@
 <div>
-    @include('users.partials.header', [
-        'title' => __('Products'),
-        'description' => __('Here you can see all your products'),
-        'class' => 'col-lg-7'
-    ])
+{{--    @include('users.partials.header', [--}}
+{{--        'title' => __('Products'),--}}
+{{--        'description' => __('Here you can see all your products'),--}}
+{{--        'class' => 'col-lg-7'--}}
+{{--    ])--}}
     <div>
         <table class="table">
             <thead class="thead-dark">
